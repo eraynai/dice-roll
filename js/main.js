@@ -7,11 +7,6 @@
 
 
 
-
-
-//print out what you have
-
-
 //Getting access to the button
 
 let firstButton = document.getElementById('rollBtn');
@@ -22,18 +17,17 @@ firstButton.addEventListener('click', event => {
   console.log(dice);
   //Change the innerHTML to tell the user what they rolled
   let result = document.getElementById('go');
-result.innerHTML = `<h1><strong>You have rolled ${dice}</strong></h1>`;
+result.innerHTML = `<p><strong>You have rolled ${dice}</strong></p>`;
 console.log(result);
-
+//get access to the image
 let images = document.getElementById('image');
 images.innerHTML = `<img src="img/dice${dice}.svg" alt="dice"></img>`;
+
+firstButton.innerHTML = 'Roll Again';
   
 })
 
-//get access to the image
 
-let images = document.getElementById('image');
-images.innerHTML = `<img src="img/dice${dice}.svg" alt="dice"></img>`;
 
 // ******************************************************
 // ********************* VARIABLES **********************
